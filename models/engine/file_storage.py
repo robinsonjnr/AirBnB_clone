@@ -7,12 +7,12 @@ import os
 
 class FileStorage:
 
-    """Class for storing and retrieving data"""
+    """Class for serialization and deserialization of base classes."""
     __file_path = "file.json"
     __objects = {}
 
     def all(self):
-        """returns the dictionary __objects"""
+        """Returns __objects dictionary."""
         return FileStorage.__objects
 
     def new(self, obj):
