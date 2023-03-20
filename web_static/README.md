@@ -1,10 +1,13 @@
 <div>
-  <img src="https://user-images.githubusercontent.com/69850751/175876062-f252cc1b-bd44-46b3-9ddb-a7692b2eede4.png" alt="hbnb logo">
+  <img src="https://user-images.githubusercontent.com/69850751/175876062-f252cc1b-bd44-46b3-9ddb-a7692b2eede4.png"     alt="">
 </div>
 
 ## Description
 
-Airbnb clone is a complete web application with front-end interfacing, a back-end API, and database storage.
+Airbnb clone is a complete web application, integrating database storage,
+a back-end API, and front-end interfacing in a clone of AirBnB.
+
+The project currently only implements the back-end console.
 
 ## Classes
 
@@ -40,7 +43,7 @@ The AirBnB console can be run both interactively and non-interactively.
 To run the console in non-interactive mode, pipe any command(s) into an execution
 of the file `console.py` at the command line.
 
-```
+```bash
 $ echo "help" | ./console.py
 (hbnb)
 Documented commands (type help <topic>):
@@ -54,13 +57,13 @@ $
 Alternatively, to use the AirBnB console in interactive mode, run the
 file `console.py` by itself:
 
-```
+```bash
 $ ./console.py
 ```
 
 While running in interactive mode, the console displays a prompt for input:
 
-```
+```bash
 $ ./console.py
 (hbnb)
 ```
@@ -68,13 +71,13 @@ $ ./console.py
 To quit the console, enter the command `quit`, or input an EOF signal
 (`ctrl-D`).
 
-```
+```bash
 $ ./console.py
 (hbnb) quit
 $
 ```
 
-```
+```bash
 $ ./console.py
 (hbnb) EOF
 $
@@ -95,7 +98,7 @@ the instance is saved to the file `file.json`.
 
 Prints the string representation of a class instance based on a given id.
 
-```
+```bash
 $ ./console.py
 (hbnb) create User
 (hbnb)
@@ -111,7 +114,7 @@ $ ./console.py
 Deletes a class instance based on a given id. The storage file `file.json`
 is updated accordingly.
 
-```
+```bash
 $ ./console.py
 (hbnb) create State
 (hbnb) create Place
@@ -129,7 +132,7 @@ $ cat file.json ; echo ""
 Prints the string representations of all instances of a given class. If no
 class name is provided, the command prints all instances of every class.
 
-```
+```bash
 $ ./console.py
 (hbnb) create BaseModel
 (hbnb) create BaseModel
@@ -148,7 +151,7 @@ $ ./console.py
 
 Retrieves the number of instances of a given class.
 
-```
+```bash
 $ ./console.py
 (hbnb) create Place
 (hbnb) create Place
@@ -172,7 +175,7 @@ key/value attribute pair, only "simple" attributes can be updated (ie. not
 `id`, `created_at`, and `updated_at`). However, any attribute can be updated by
 providing a dictionary.
 
-```
+```bash
 $ ./console.py
 (hbnb) create User
 (hbnb)
@@ -191,12 +194,12 @@ $ ./console.py
 Unittests for the Airbnb_clone project are defined in the [tests](./tests)
 folder. To run the entire test suite simultaneously, execute the following command:
 
-```
+```python
 $ python3 unittest -m discover tests
 ```
 
 Alternatively, you can specify a single test file to run at a time:
 
-```
+```python
 $ python3 unittest -m tests/test_console.py
 ```
